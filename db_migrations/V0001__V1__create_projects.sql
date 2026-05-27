@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS t_p69306450_task_tracker_kanban.projects (
+  id SERIAL PRIMARY KEY,
+  name TEXT NOT NULL,
+  color TEXT NOT NULL DEFAULT '#6366f1',
+  progress INTEGER NOT NULL DEFAULT 0,
+  created_at TIMESTAMPTZ DEFAULT NOW()
+);
